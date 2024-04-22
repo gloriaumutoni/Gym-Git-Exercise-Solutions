@@ -982,3 +982,92 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
    621d18d..b8cc13a  main -> main
 ```
+# Bundle 5
+
+## Exercise 2
+``` bash
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git clone https://github.com/gloriaumutoni/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93Resolving deltas: 100% (5/5), done.), done.
+
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git add .
+warning: adding embedded git repository: git-cafe-exercise
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> git-cafe-exercise
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached git-cafe-exercise
+hint: 
+hint: See "git help submodule" for more information.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git commit -a -m "new changes on forked repo"
+[main efc5107] new changes on forked repo
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 160000 git-cafe-exercise
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git push
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.41 KiB | 5.00 KiB/s, done.
+From https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions
+   b8cc13a..d705e7e  main       -> origin/main
+Merge made by the 'ort' strategy.
+ README.md | 79 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 79 insertions(+)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 752 bytes | 150.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+   d705e7e..f3b31e3  main -> main
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git commit -a -m "new changes on forked repo"
+[main aa2a5cf] new changes on forked repo
+ 1 file changed, 1 deletion(-)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+   f3b31e3..aa2a5cf  main -> main
+
+```
