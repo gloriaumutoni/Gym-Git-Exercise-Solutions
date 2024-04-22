@@ -237,3 +237,196 @@ To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 ```
+
+##Exercise 2
+```bash
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 5 commits, and can be fast-
+  (use "git pull" to update your local branch)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git pull
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (11/11), done.
+From https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions
+   413014a..10e370c  main       -> origin/main
+Updating a2c378c..10e370c
+Fast-forward
+ README.md  | 240 ++++++++++++++++++++++++++++++++++++++++++++++++
+ about.html |   0
+ home.html  |  11 +++
+ index.html |  11 +++
+ 4 files changed, 261 insertions(+), 1 deletion(-)
+ create mode 100644 about.html
+ create mode 100644 home.html
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git commit -a -m "redesigning service page"
+On branch ft/service-redesign
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add"
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git add services.html
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git commit -m "redesigning service page"
+[ft/service-redesign 4a73af5] redesigning service page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream bran
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$  git push --set-upstream origin ft/service-redesign
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 445 bytes | 148.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local objec
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub 
+remote:      https://github.com/gloriaumutoni/Gym-Git-Exercise-Solce-redesign
+remote:
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-re
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ gti checkout main
+bash: gti: command not found
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git add -A
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git commit -m "new changes in service page"
+[main 5953e47] new changes in service page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git push --set-upstream origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 460 bytes | 460.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local objec
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+   10e370c..5953e47  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git diff origin/main
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git diff origin/ft/service-redesign
+diff --git a/services.html b/services.html
+index 957b318..addb25d 100644
+--- a/services.html
++++ b/services.html
+@@ -6,6 +6,6 @@
+     <title>Document</title>
+ </head>
+ <body>
+-    <h1>Adding new changes</h1>
++    <h1>Adding new changes to main branch</h1>
+ </body>
+ </html>
+:...skipping...
+diff --git a/services.html b/services.html     
+index 957b318..addb25d 100644
+--- a/services.html
++++ b/services.html
+@@ -6,6 +6,6 @@
+     <title>Document</title>
+ </head>
+ <body>
+-    <h1>Adding new changes</h1>
++    <h1>Adding new changes to main branch</h1>
+ </body>
+ </html>
+\ No newline at end of file
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git diff origin/ft/service-redesign
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git diff origin/main
+diff --git a/services.html b/services.html
+index addb25d..957b318 100644
+--- a/services.html
++++ b/services.html
+@@ -6,6 +6,6 @@
+     <title>Document</title>
+ </head>
+ <body>
+-    <h1>Adding new changes to main branch</h1>
++    <h1>Adding new changes</h1>
+ </body>
+ </html>
+\ No newline at end of file
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git merge
+Already up to date.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&sign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git&
+$ git pull origin main
+From https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+$ git merge ft/service-redesign
+Auto-merging services.html
+CONFLICT (add/add): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+```
