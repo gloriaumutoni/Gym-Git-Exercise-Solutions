@@ -903,3 +903,82 @@ To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 ```
+## Exercise 2
+```bash
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (ft/footer)     
+$ git add .
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (ft/footer)     
+$ git commit -m "second commit"
+[ft/footer 1df5c32] second commit
+ 1 file changed, 1 insertion(+)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (ft/footer)     
+$ git add .
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (ft/footer)     
+$ git commit -m "new changes"
+[ft/footer 63e21f0] new changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (ft/footer)     
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (ft/footer)     
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 562 bytes | 281.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (ft/footer)     
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git branch ft/squashing
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git merge --squash ft/footer 
+Updating 621d18d..63e21f0
+Fast-forward
+Squash commit -- not updating HEAD
+ home.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git commit -a -m "footer changes squashing"
+[main b8cc13a] footer changes squashing
+ 1 file changed, 1 insertion(+)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 336 bytes | 336.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+   621d18d..b8cc13a  main -> main
+```
