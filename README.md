@@ -192,7 +192,7 @@ To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
 branch 'dev' set up to track 'origin/dev'.
 
 Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The Gym Git& GitHub (dev)
-$ git reset
+$ git reset --hard
 ```
 # Bundle 2
 ## Exercise 1
