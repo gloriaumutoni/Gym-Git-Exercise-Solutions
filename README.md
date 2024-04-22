@@ -1146,3 +1146,79 @@ To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/cafe -> ft/cafe
 branch 'ft/cafe' set up to track 'origin/ft/cafe'.
 ```
+## Exercises 2
+```bash
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub/git-cafe-exercise (main)
+$ git checkout -b bug-fix
+Switched to a new branch 'bug-fix'
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub/git-cafe-exercise (bug-fix)
+$ git add .
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub/git-cafe-exercise (bug-fix)
+$ git commit -m "change index4 name"
+[bug-fix 53dd672] change index4 name
+ 2 files changed, 204 insertions(+), 204 deletions(-)     
+ rename index-4.html => Contact.html (97%)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub/git-cafe-exercise (bug-fix)
+$ git push
+fatal: The current branch bug-fix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug-fix
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub/git-cafe-exercise (bug-fix)
+$  git push --set-upstream origin bug-fix
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.31 KiB | 787.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0      
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug-fix' on GitHub by visiting:
+remote:      https://github.com/gloriaumutoni/git-cafe-exercise/pull/new/bug-fix
+remote:
+To https://github.com/gloriaumutoni/git-cafe-exercise.git 
+ * [new branch]      bug-fix -> bug-fix
+branch 'bug-fix' set up to track 'origin/bug-fix'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub/git-cafe-exercise (bug-fix)
+$ git branch
+* bug-fix
+  main
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub/git-cafe-exercise (bug-fix)
+$ cd ..
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)
+$ git commit -a -m "new changes"
+[ft/cafe 7a96d26] new changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 247 bytes | 247.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0      
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+   757dd18..7a96d26  ft/cafe -> ft/cafe
+```
