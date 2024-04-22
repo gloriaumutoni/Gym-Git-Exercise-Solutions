@@ -1071,3 +1071,78 @@ To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
    f3b31e3..aa2a5cf  main -> main
 
 ```
+# Bundle 6
+
+## Exercises 1
+
+```bash
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (main)
+$ git checkout -b ft/cafe                                 Gym Git& GitHub (main)
+Switched to a new branch 'ft/cafe'
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)                                 Gym Git& GitHub (ft/cafe)       
+$ touch Menu.html
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)
+$ git commit -a -m "new branch ft/cafe"
+On branch ft/cafe
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in 
+submodules)
+        modified:   git-cafe-exercise (modified content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Menu.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)
+$ git add .
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)
+$ git add -A
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)
+$ git commit -m "new branch ft/cafe"
+[ft/cafe 757dd18] new branch ft/cafe
+ 1 file changed, 12 insertions(+)
+ create mode 100644 Menu.html
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)
+$ git push
+fatal: The current branch ft/cafe has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/cafe
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Nicole@DESKTOP-NRC5VAI MINGW64 ~/Downloads/javascript/The 
+Gym Git& GitHub (ft/cafe)
+$   git push --set-upstream origin ft/cafe
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 2.99 KiB | 612.00 KiB/s, done.
+Total 16 (delta 8), reused 0 (delta 0), pack-reused 0     
+remote: Resolving deltas: 100% (8/8), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/cafe' on GitHub by visiting:
+remote:      https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions/pull/new/ft/cafe
+remote:
+To https://github.com/gloriaumutoni/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/cafe -> ft/cafe
+branch 'ft/cafe' set up to track 'origin/ft/cafe'.
+```
